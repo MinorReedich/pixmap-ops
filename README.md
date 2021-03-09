@@ -59,5 +59,5 @@ using the soup.ppm file.
 
 ## Results
 
-TODO: Show artworks using your class
+The artworks are in the images file in ppm format. 
 
