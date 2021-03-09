@@ -45,7 +45,17 @@ pixmap-ops/build $ ../bin/pixmap_art
 
 ## Image operators
 
-TODO: Document the features of your PPM image class here. Include example images.
+Along with the required methods, ppm_image.cpp implements a border() method, 
+which creates a purple border along the inside of an image, a swirl method,
+which rearanges the rgb values such that r=b, g=r, and b=g in the returned
+image, an invert() method, which subtracts each rgb value from 255, a random()
+method, which randomizes the color of each pixel, an extract_red() method,
+which sets g and b values of each pixel to 0, conserving only r values, and a 
+box_blur() method, which makes each pixel an average of itself and the 8 pixels 
+surrounding it. 
+
+The ppm_image.cpp file contains tests for each one of these methods individually,
+using the soup.ppm file. 
 
 ## Results
 
