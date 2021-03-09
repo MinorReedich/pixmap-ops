@@ -10,9 +10,9 @@ namespace agl
 {
   struct ppm_pixel
   {
-     unsigned char r;
-     unsigned char g;
-     unsigned char b;
+     int r;
+     int g;
+     int b;
   };
 
   class ppm_image
@@ -69,5 +69,27 @@ namespace agl
 
      // return the height of the image
      int height() const;
+
+     // return a copy of this image with border
+     ppm_image border() const;
+
+     // return a copy of this image with colors swirled
+     ppm_image swirl() const;
+
+     // return a copy of this image with colors inverted
+     ppm_image invert() const;
+
+     // return a copy of this image with only r
+     ppm_image extract_red() const;
+
+     // return a copy of this image with randomized color values
+     ppm_image randomize() const;
+
+     // return a copy of this image with box blur 
+     ppm_image box_blur() const;
+
+   private:
+      ppm_pixel** ary;
+      int ht, wdth;
   };
 }
