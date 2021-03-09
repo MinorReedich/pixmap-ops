@@ -39,7 +39,10 @@ ppm_image& ppm_image::operator=(const ppm_image& orig)
 
 ppm_image::~ppm_image()
 {
-   //cout << ("Destroyed\n");
+   for(int i = 0; i < ht; i++){
+      delete[] ary[i];
+   }
+   delete[] ary;
 }
 
 bool ppm_image::load(const std::string& filename)
