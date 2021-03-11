@@ -57,5 +57,19 @@ using the soup.ppm file.
 
 ## Results
 
-The artworks are in the images file in ppm format. 
+For this image, I inverted the colors, extracted red, swirled the colors, then 
+applied a border around the inside edge. 
 
+![art1 not found](images/art1.jpg)
+
+
+For this image, I inverted the colors, extracted red, swirled the colors twice,
+then applied gamma correction.
+
+![art2 not found](images/art2.jpg)
+
+
+For this image, I randomaized the colors, applied a box blur, added a border, and 
+blurred it twice more, in order to create a static television-like artwork.
+
+![art3 not found](images/art3.jpg)
